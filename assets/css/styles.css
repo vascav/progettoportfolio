@@ -1,0 +1,392 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+h1, h2 {
+    margin: 0;
+}
+
+h3 {
+  margin-bottom: 30px;
+}
+
+h4 {
+  margin-bottom: 15px;
+}
+  
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+  }
+
+
+/* HEADER */
+
+header {
+    background: linear-gradient(to bottom, rgba(204, 204, 204, 1),rgba(204, 204, 204, 0));
+    text-align: center;
+    padding: 20px;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+
+.testa {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cerchiato {
+    white-space: nowrap;
+    padding: 3px 10px;
+    margin: 10px;
+    align-items: center;
+    border-top: 2px solid;
+    border-bottom: 2px solid;
+    border-image: linear-gradient(to left, greenyellow, black) 1;
+    transition: transform 0.1s ease;
+}
+
+.cerchiato:hover {
+    padding: 3px 10px;
+    margin: 10px;
+    align-items: center;
+    border-top: 2px solid;
+    border-bottom: 2px solid;
+    border-image: linear-gradient(to left, greenyellow, black) 1;
+    transform: scale(1.1);
+}
+
+.nome {
+  letter-spacing: 8px;
+  font-size: 25px;
+  padding: 5px;
+  margin-bottom: 5px;
+}
+
+.professione {
+  letter-spacing: 8px;
+  font-size: 15px;
+  padding: 5px;
+}
+
+
+
+/* FOOTER */
+
+footer {
+    background: linear-gradient(to top, rgba(204, 204, 204, 1), rgba(204, 204, 204, 0));
+    /* background-color: #333; */
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+    margin-top: auto;
+    /* width: 100%; */
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 4;
+}
+
+.socialhome {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 3%;
+  left: 45%;
+  right: 45%;
+  z-index: 4;
+  
+}
+
+.loghi {
+  width: 33px;
+  height: 30px;
+  margin: 0px 10px;
+  padding: 0px;
+  transition: transform 0.1s ease;
+  opacity: 0.7;
+}
+
+.loghi:hover {
+  transform: scale(1.1);
+}
+
+
+/* MAIN */ 
+
+.decorazione {
+  height: 100vh;
+  /* width: 100vw; */
+}
+
+#progetti , #chisono , #contattami , #skills {
+  text-align: center;
+  padding: 15px;
+  margin-top: 25px;
+}
+
+.campo {
+  margin: 15px 0px 0px 0px;
+}
+
+hr {
+  width: 40%;
+}
+
+.progettivari {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.immaginecontainer {
+  position: relative;
+  display: inline-block;
+  width: 39%;
+  height: 13%;
+  margin-bottom: 40px;
+  box-shadow: 8px 8px 8px #ccc;
+  border-radius: 25px;
+}
+
+.velo-contenuto {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.velo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 25px;
+}
+
+.velo:hover {
+  opacity: 0;
+  cursor: pointer;
+}
+
+.velo p {
+  color: #f1f1f1;
+  font-weight: bold;
+  text-align: center;
+}
+
+.imgprogetto {
+  object-fit: cover;
+  border-radius: 25px;
+  width: 100%;
+  height: 100%;
+}
+
+.nomeprogetto {
+  letter-spacing: 2px;
+  font-size: 20px;
+}
+
+.descrizione {
+  letter-spacing: 2px;
+  line-height: 22px
+}
+
+.fase {
+  letter-spacing: 2px;
+  line-height: 22px;
+}
+
+.skill {
+  letter-spacing: 1px;
+  margin-top: 15px;
+}
+
+
+
+/* STORYLINE */
+
+.timeline {
+    position: relative;
+    margin: 50px auto;
+    width: 80%;
+  }
+  
+  .timeline:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    width: 2px;
+    background-color: #ccc;
+    transform: translateX(-50%);
+  }
+  
+  .timeline-item {
+    position: relative;
+    margin-bottom: 50px;
+  }
+  
+  .timeline-date {
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #ccc;
+    padding: 5px 10px;
+    border-radius: 5px;
+  }
+  
+  .timeline-content {
+    background-color: #f1f1f1;
+    padding: 20px;
+    border-radius: 5px;
+  }
+  
+  .timeline-content h3 {
+    margin-top: 0;
+  }
+  
+  .timeline-content p {
+    margin-bottom: 0;
+  }
+
+
+
+/* PROGRESSBAR */
+
+.progress-bar {
+    width: 300px;
+    height: 7px;
+    background-color: #f1f1f1;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 5px auto;
+  }
+  
+  .css {
+    height: 100%;
+    background: linear-gradient(to right, #008000, #4caf50, #adff2f);
+    border-radius: 10px;
+    width: 0%;
+    animation: css 4s ease-in-out forwards;
+  }
+
+  .html {
+    height: 100%;
+    background: linear-gradient(to right, #008000, #4caf50, #adff2f);
+    border-radius: 10px;
+    width: 0%;
+    animation: html 4s ease-in-out forwards;
+  }
+
+  .python {
+    height: 100%;
+    background: linear-gradient(to right, #008000, #4caf50, #adff2f);
+    border-radius: 10px;
+    width: 0%;
+    animation: python 4s ease-in-out forwards;
+  }
+
+  .sql {
+    height: 100%;
+    background: linear-gradient(to right, #008000, #4caf50, #adff2f);
+    border-radius: 10px;
+    width: 0%;
+    animation: sql 4s ease-in-out forwards;
+  }
+  
+  @keyframes css {
+    0% {
+      width: 0%;
+    }
+    100% {
+      width: 75%;
+    }
+  }
+  
+  @keyframes html {
+    0% {
+      width: 0%;
+    }
+    100% {
+      width: 90%;
+    }
+  }
+  
+  @keyframes python {
+    0% {
+      width: 0%;
+    }
+    100% {
+      width: 50%;
+    }
+  }
+
+  @keyframes sql {
+    0% {
+      width: 0%;
+    }
+    100% {
+      width: 45%;
+    }
+  }
+
+
+/* CAROSELLO */
+
+#carousel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  height: 20px;
+  margin-bottom: 10px;
+}
+
+.word {
+  display: none;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.word.active {
+  display: inline-block;
+  opacity: 1;
+}
+
+.box {
+  display: flex;
+}
