@@ -433,17 +433,6 @@ input {
   box-shadow: 3px 3px 8px #ccc;
 }
 
-textarea {
-  width: 55%;
-  min-width: 250px;
-  margin: 10px 0 0 0;
-  background-color: #f1f1f1;
-  border: 1px solid #f1f1f1;
-  color: #333;
-  resize: none;
-  box-shadow: 3px 3px 8px #ccc;
-}
-
 input[type="submit"] {
   display: block;
   width: 10%;
@@ -459,4 +448,15 @@ input[type="submit"] {
 input[type="submit"]:hover {
 transform: scale(1.101);
 cursor: pointer;
+}
+
+textarea {
+  width: 55%;
+  min-width: 250px;
+  margin: 10px 0 0 0;
+  background-color: #f1f1f1;
+  border: 1px solid #f1f1f1;
+  color: #333;
+  resize: none;
+  box-shadow: 3px 3px 8px #ccc;
 }
