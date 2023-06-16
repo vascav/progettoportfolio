@@ -41,6 +41,8 @@ header {
     padding: 20px;
     position: sticky;
     top: 0;
+    right: 0;
+    left: 0;
     z-index: 2;
 }
 
@@ -96,7 +98,7 @@ nav {
 /* FOOTER */
 
 footer {
-    background: linear-gradient(to top, rgba(204, 204, 204, 1), rgba(204, 204, 204, 0));
+    background: linear-gradient(to top, rgba(204, 204, 204, 0.5), rgba(204, 204, 204, 0));
     /* background-color: #333; */
     color: #fff;
     padding: 15px;
@@ -402,6 +404,7 @@ fieldset {
   border: none;
   margin-top: 10px;
 }
+
 label {
   display: block;
 }
@@ -409,7 +412,7 @@ label {
 input {
   margin: 10px 0 0 0;
   width: 55%;
-  min-height: 2em;
+  min-height: 30px;
   background-color: #f1f1f1;
   border: 1px solid #f1f1f1;
   color: #333;
@@ -426,20 +429,13 @@ textarea {
   box-shadow: 3px 3px 8px #ccc;
 }
 
-.inline {
-  width: unset;
-  margin: 0 0.5em 0 0;
-  vertical-align: middle;
-}
-
 input[type="submit"] {
   display: block;
   width: 10%;
-  margin: 1em auto;
-  height: 2em;
-  font-size: 1.1rem;
+  margin: 16px auto;
+  height: 30px;
+  font-size: 17px;
   background-color: #f1f1f1;
-  /* border-color: #333; */
   min-width: 300px;
   border-radius: 25px;
   transition: transform 0.1s ease;
@@ -448,31 +444,4 @@ input[type="submit"] {
 input[type="submit"]:hover {
 transform: scale(1.1);
 cursor: pointer;
-}
-
-
-/* CAROSELLO */
-
-#carousel {
-display: flex;
-justify-content: center;
-align-items: center;
-overflow: hidden;
-height: 20px;
-margin-bottom: 10px;
-}
-
-.word {
-display: none;
-opacity: 0;
-transition: opacity 0.5s;
-}
-
-.word.active {
-display: inline-block;
-opacity: 1;
-}
-
-.box {
-display: flex;
 }
