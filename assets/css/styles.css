@@ -143,7 +143,6 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  border: 2px solid red;
 }
 
 .decorazione {
@@ -161,7 +160,6 @@ main {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  border: 2px solid yellow;
 }
 
 .campo {
