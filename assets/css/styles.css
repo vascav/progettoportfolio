@@ -390,3 +390,89 @@ hr {
 .box {
   display: flex;
 }
+
+
+/* FORM */
+
+form {
+  margin: 20px;
+}
+
+fieldset {
+  border: none;
+  margin-top: 10px;
+}
+label {
+  display: block;
+}
+
+input {
+  margin: 10px 0 0 0;
+  width: 55%;
+  min-height: 2em;
+  background-color: #f1f1f1;
+  border: 1px solid #f1f1f1;
+  color: #333;
+  box-shadow: 3px 3px 8px #ccc;
+}
+
+textarea {
+  width: 55%;
+  margin: 10px 0 0 0;
+  background-color: #f1f1f1;
+  border: 1px solid #f1f1f1;
+  color: #333;
+  resize: none;
+  box-shadow: 3px 3px 8px #ccc;
+}
+
+.inline {
+  width: unset;
+  margin: 0 0.5em 0 0;
+  vertical-align: middle;
+}
+
+input[type="submit"] {
+  display: block;
+  width: 10%;
+  margin: 1em auto;
+  height: 2em;
+  font-size: 1.1rem;
+  background-color: #f1f1f1;
+  /* border-color: #333; */
+  min-width: 300px;
+  border-radius: 25px;
+  transition: transform 0.1s ease;
+}
+
+input[type="submit"]:hover {
+transform: scale(1.1);
+cursor: pointer;
+}
+
+
+/* CAROSELLO */
+
+#carousel {
+display: flex;
+justify-content: center;
+align-items: center;
+overflow: hidden;
+height: 20px;
+margin-bottom: 10px;
+}
+
+.word {
+display: none;
+opacity: 0;
+transition: opacity 0.5s;
+}
+
+.word.active {
+display: inline-block;
+opacity: 1;
+}
+
+.box {
+display: flex;
+}
