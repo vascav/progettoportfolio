@@ -1,13 +1,11 @@
 
 body {
     font-family: Arial, sans-serif;
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
-    height: 100%;
     color: #333;
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
 }
 
 h1, h2 {
@@ -102,7 +100,6 @@ footer {
     padding: 15px;
     text-align: center;
     margin-top: auto;
-    /* width: 100%; */
 }
 
 .social {
@@ -140,15 +137,27 @@ footer {
 
 /* MAIN */ 
 
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .decorazione {
   height: 100vh;
   /* width: 100vw; */
+  width: 100%;
 }
 
 #progetti , #chisono , #contattami , #skills {
   text-align: center;
   padding: 15px;
   margin-top: 25px;
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .campo {
@@ -396,6 +405,8 @@ hr {
 
 form {
   margin: 20px;
+  width: 60%;
+  min-width: 400px;
 }
 
 fieldset {
@@ -410,6 +421,7 @@ label {
 input {
   margin: 10px 0 0 0;
   width: 55%;
+  min-width: 250px;
   min-height: 30px;
   background-color: #f1f1f1;
   border: 1px solid #f1f1f1;
@@ -419,6 +431,7 @@ input {
 
 textarea {
   width: 55%;
+  min-width: 250px;
   margin: 10px 0 0 0;
   background-color: #f1f1f1;
   border: 1px solid #f1f1f1;
