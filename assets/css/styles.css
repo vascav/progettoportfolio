@@ -340,6 +340,22 @@ hr {
     width: 0%;
     animation: sql 4s ease-in-out forwards;
   }
+
+  .javascript {
+    height: 100%;
+    background: linear-gradient(to right, #008000, #4caf50, #adff2f);
+    border-radius: 10px;
+    width: 0%;
+    animation: javascript 4s ease-in-out forwards;
+  }
+
+  .git {
+    height: 100%;
+    background: linear-gradient(to right, #008000, #4caf50, #adff2f);
+    border-radius: 10px;
+    width: 0%;
+    animation: git 4s ease-in-out forwards;
+  }
   
   @keyframes css {
     0% {
@@ -347,6 +363,24 @@ hr {
     }
     100% {
       width: 75%;
+    }
+  }
+
+  @keyframes javascript {
+    0% {
+      width: 0%;
+    }
+    100% {
+      width: 45%;
+    }
+  }
+
+  @keyframes git {
+    0% {
+      width: 0%;
+    }
+    100% {
+      width: 55%;
     }
   }
   
