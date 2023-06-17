@@ -162,8 +162,8 @@ main {
   flex-direction: column;
 }
 
-.campo {
-  margin: 15px 0px 0px 0px;
+.roadmap {
+  margin-top: 20px;
 }
 
 hr {
