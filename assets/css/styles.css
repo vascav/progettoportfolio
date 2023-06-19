@@ -513,7 +513,6 @@ nav {
   padding: 0px;
   margin: 0px;
   text-align: center;
-  border: 1px solid orange;
 }
   
 .navbar li {
@@ -526,7 +525,6 @@ nav {
   cursor: pointer;
   padding: 1px;
   transition: transform 0.1s ease;
-  border: 1px solid red;
 }
 
 .hamburger:hover {
@@ -540,7 +538,6 @@ nav {
   margin-right: 8px;
   border-radius: 25px;
   background: linear-gradient(to left, greenyellow, black);
-  border: 1px solid yellow;
 }
 
 .specmenu {
@@ -551,7 +548,6 @@ nav {
   font-size: 7px;
   letter-spacing: 2px;
   color: #333;
-  border: 1px solid yellow;
 }
   
 .show {
