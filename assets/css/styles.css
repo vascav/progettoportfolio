@@ -156,7 +156,7 @@ main {
 #progetti , #chisono , #contattami , #skills {
   text-align: center;
   padding: 15px;
-  margin-top: 25px;
+  margin-top: 18px;
   width: 80%;
   display: flex;
   align-items: center;
@@ -535,6 +535,7 @@ nav {
   width: 30px;
   height: 5px;
   margin-top: 4px;
+  margin-right: 8px;
   border-radius: 25px;
   background: linear-gradient(to left, greenyellow, black);
 }
