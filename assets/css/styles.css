@@ -35,7 +35,7 @@ a {
 /* HEADER */
 
 header {
-    background: linear-gradient(to bottom, rgba(204, 204, 204, 1),rgba(204, 204, 204, 0));
+    background: linear-gradient(to bottom, rgba(204, 204, 204, 1), rgba(204, 204, 204, 0));
     text-align: center;
     padding: 20px;
     position: sticky;
@@ -58,23 +58,25 @@ nav {
 
 .cerchiato {
     white-space: nowrap;
-    padding: 3px 10px;
-    margin: 10px;
+    padding: 0px 8px;
+    margin: 10px 10px;
     align-items: center;
     border-top: 2px solid;
     border-bottom: 2px solid;
     border-image: linear-gradient(to left, greenyellow, black) 1;
     transition: transform 0.1s ease;
+    width: 85px;
+    font-size: 16px;
 }
 
 .cerchiato:hover {
-    padding: 3px 10px;
-    margin: 10px;
+    padding: 0px 8px;
+    margin: 5px 10px;
     align-items: center;
     border-top: 2px solid;
     border-bottom: 2px solid;
     border-image: linear-gradient(to left, greenyellow, black) 1;
-    transform: scale(1.1);
+    transform: scale(1.15);
 }
 
 .nome {
@@ -494,3 +496,64 @@ textarea {
   resize: none;
   box-shadow: 3px 3px 8px #ccc;
 }
+
+
+/* Menu a comparsa */
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+}
+
+.navbar {
+  display: none;
+  list-style-type: none;
+  padding: 0px;
+  margin: 0px;
+  text-align: center;
+}
+  
+.navbar li {
+  display: inline-block;
+}
+  
+.navbar li a {
+  text-decoration: none;
+  color: #333;
+}
+
+
+.hamburger {
+  display: block;
+  align-items: center;
+  cursor: pointer;
+  padding: 1px;
+  transition: transform 0.1s ease;
+}
+
+.hamburger:hover {
+  transform: scale(1.15);
+}
+  
+.line {
+  width: 30px;
+  height: 5px;
+  margin: 4px 10px 4px 3px;
+  border-radius: 25px;
+  background: linear-gradient(to left, greenyellow, black);
+}
+
+.specmenu {
+  width: 30px;
+  height: 10px;
+  margin: 4px 10px 4px 3px;
+  font-size: 7px;
+  letter-spacing: 2px;
+  color: #333;
+}
+  
+.show {
+  display: block !important;
+}  
