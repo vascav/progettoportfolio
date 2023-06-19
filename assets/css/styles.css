@@ -540,7 +540,7 @@ nav {
 .line {
   width: 30px;
   height: 5px;
-  margin: 4px 10px 4px 3px;
+  margin: 4px 8px 4px 3px;
   border-radius: 25px;
   background: linear-gradient(to left, greenyellow, black);
 }
