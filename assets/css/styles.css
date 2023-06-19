@@ -535,16 +535,18 @@ nav {
   width: 30px;
   height: 5px;
   margin-top: 4px;
-  margin-right: 8px;
   border-radius: 25px;
   background: linear-gradient(to left, greenyellow, black);
+}
+
+.line:first-of-type {
+  margin-top: 8px;
 }
 
 .specmenu {
   width: 30px;
   height: 7px;
   margin-top: 4px;
-  margin-right: 8px;
   font-size: 7px;
   letter-spacing: 2px;
   color: #333;
