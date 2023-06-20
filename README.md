@@ -12,7 +12,7 @@ La cartella "assets" contiene:
 - una cartella "js" con all'interno i codici javascript utilizzati nel sito web;
 - una cartella "pages" contente le pagine html secondarie del sito web ("chisono", "progetti, "contattami");
 
-Nell'Head sono presenti i tag "title" per l'assegnazione del titolo alla pagina, "Og" per l'assegnazione di di determinati contenuti in fase di condivisione dei link, "keyboard" per l'assegnazione di determinate parole chiave volte alla SEO, "viewport" per l'ottimizzazione in fase di visualizzazione da diversi device ed inoltre sono presenti i link alla Favicon e al foglio di stile.
+Nell'Head sono presenti i tag "title" per l'assegnazione del titolo alla pagina, "Og" per l'assegnazione di determinati contenuti in fase di condivisione dei link, "keyboard" per l'assegnazione di determinate parole chiave volte alla SEO, "viewport" per l'ottimizzazione in fase di visualizzazione da diversi device ed inoltre sono presenti i link alla Favicon e al foglio di stile.
 
 Nel il sito è possibile navigare tra le varie pagine dello stesso attraverso la nav bar presente nell'Header, la quale permette appunto di scegliere tra la "Home, "Chi sono", "Portfolio" e "Contattami". Il menu è raggiungibile cliccando sull'icona "Hamburger" la quale farà apparire la nav bar.
 
