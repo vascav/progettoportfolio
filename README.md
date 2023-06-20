@@ -4,7 +4,7 @@ Questo progetto rappresenta il mio sito web "portfolio personale".
 
 La cartella di progetto si presenta con:
 - un file principale "index.html" la quale rappresenta la "Home" del sito;
-- una cartella "assets" contentente.
+- una cartella "assets".
 
 La cartella "assets" contiene:
 - una cartella "css" con all'interno il foglio di stile del sito web;
