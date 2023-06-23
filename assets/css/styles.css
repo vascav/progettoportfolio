@@ -505,7 +505,6 @@ nav {
   justify-content: center;
   align-items: center;
   padding: 0;
-  border: 1px solid orange;
 }
 
 .navbar {
@@ -515,7 +514,6 @@ nav {
   margin: 0px;
   text-align: center;
   width: 37%;
-  border: 1px solid red;
 }
   
 .navbar li {
@@ -528,7 +526,6 @@ nav {
   cursor: pointer;
   padding: 1px;
   transition: transform 0.1s ease;
-  border: 1px solid greenyellow;
 }
 
 .hamburger:hover {
