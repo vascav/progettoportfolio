@@ -59,19 +59,19 @@ nav {
 .cerchiato {
     white-space: nowrap;
     padding: 0px 8px;
-    margin: 10px 10px;
+    margin: 5px 6px;
     align-items: center;
     border-top: 2px solid;
     border-bottom: 2px solid;
     border-image: linear-gradient(to left, greenyellow, black) 1;
     transition: transform 0.1s ease;
-    width: 85px;
-    font-size: 16px;
+    width: 80px;
+    font-size: 15px;
 }
 
 .cerchiato:hover {
     padding: 0px 8px;
-    margin: 5px 10px;
+    margin: 5px 6px;
     align-items: center;
     border-top: 2px solid;
     border-bottom: 2px solid;
@@ -505,6 +505,7 @@ nav {
   justify-content: center;
   align-items: center;
   padding: 0;
+  border: 1px solid orange;
 }
 
 .navbar {
@@ -513,6 +514,8 @@ nav {
   padding: 0px;
   margin: 0px;
   text-align: center;
+  width: 37%;
+  border: 1px solid red;
 }
   
 .navbar li {
@@ -525,6 +528,7 @@ nav {
   cursor: pointer;
   padding: 1px;
   transition: transform 0.1s ease;
+  border: 1px solid greenyellow;
 }
 
 .hamburger:hover {
@@ -535,7 +539,6 @@ nav {
   width: 30px;
   height: 5px;
   margin-top: 4px;
-  margin-right: 8px;
   border-radius: 25px;
   background: linear-gradient(to left, greenyellow, black);
 }
@@ -548,7 +551,6 @@ nav {
   width: 30px;
   height: 7px;
   margin-top: 4px;
-  margin-right: 8px;
   font-size: 7px;
   letter-spacing: 2px;
   color: #333;
