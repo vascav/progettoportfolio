@@ -172,7 +172,7 @@ main {
   padding: 5px;
   width: 75%;
   border: 1px solid #ccc;
-  border-radius: 5px;
+  border-radius: 20px;
   box-shadow: 0px 0px 6px #ccc;
 }
 
@@ -186,8 +186,8 @@ main {
 }
 
 .immaginearticolo {
-  width: 200px;
-  height: 100px;
+  width: 160px;
+  height: 80px;
   float: left;
   border-radius: 5px;
   overflow: hidden;
@@ -197,6 +197,26 @@ main {
 .testoarticolo {
   text-align: justify;
   margin: 0px 15px 5px 15px;
+}
+
+.articolonascosto {
+  display: none;
+}
+
+.readmore {
+  margin-top: 10px;
+  border-radius: 5px;
+  background-color: #f1f1f1;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  float: right;
+  color: #333;
+  padding: 2px 5px;
+  transition: transform 0.1s ease;
+}
+
+.readmore:hover {
+  transform: scale(1.1);
 }
 
 .roadmap {
