@@ -159,66 +159,6 @@ main {
   flex-direction: column;
 }
 
-.articolo:first-of-type {
-  margin-top: 10px;
-}
-
-.articolo:last-of-type {
-  margin-bottom: 80px;
-}
-
-.articolo {
-  margin-top: 30px;
-  padding: 5px;
-  width: 75%;
-  border: 1px solid #ccc;
-  border-radius: 20px;
-  box-shadow: 0px 0px 6px #ccc;
-}
-
-.titoloarticolo {
-  margin: 10px 0px;
-}
-
-.bloccoarticolo {
-  overflow: hidden;
-  padding: 15px;
-}
-
-.immaginearticolo {
-  width: 160px;
-  height: 80px;
-  float: left;
-  border-radius: 5px;
-  overflow: hidden;
-  margin: 0px 15px 5px 15px;
-}
-
-.testoarticolo {
-  text-align: justify;
-  margin: 0px 15px 5px 15px;
-}
-
-.articolonascosto {
-  display: none;
-}
-
-.readmore {
-  margin-top: 10px;
-  border-radius: 5px;
-  background-color: #f1f1f1;
-  border: 1px solid #ccc;
-  cursor: pointer;
-  float: right;
-  color: #333;
-  padding: 2px 5px;
-  transition: transform 0.1s ease;
-}
-
-.readmore:hover {
-  transform: scale(1.1);
-}
-
 .roadmap {
   margin-top: 20px;
 }
@@ -614,9 +554,78 @@ nav {
 }  
 
 
+/* Articoli blog */
+
+
+.articolo:first-of-type {
+  margin-top: 10px;
+}
+
+.articolo:last-of-type {
+  margin-bottom: 80px;
+}
+
+.articolo {
+  margin-top: 30px;
+  padding: 5px;
+  width: 75%;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  box-shadow: 0px 0px 6px #ccc;
+}
+
+.titoloarticolo {
+  margin: 20px 0px 0px 0px;
+}
+
+.bloccoarticolo {
+  overflow: hidden;
+  padding: 15px;
+}
+
+.immaginearticolo {
+  width: 160px;
+  height: 80px;
+  float: left;
+  border-radius: 5px;
+  overflow: hidden;
+  margin: 0px 15px 5px 15px;
+}
+
+.testoarticolo {
+  text-align: justify;
+  margin: 0px 15px 5px 15px;
+}
+
+.articolonascosto {
+  display: none;
+}
+
+.readmore {
+  margin-top: 10px;
+  border-radius: 5px;
+  background-color: #f1f1f1;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  float: right;
+  color: #333;
+  padding: 2px 5px;
+  transition: transform 0.1s ease;
+}
+
+.readmore:hover {
+  transform: scale(1.1);
+}
+
+
 /* ALCUNE IMPOSTAZIONI SOLO PER MOBILE */
 
 @media only screen and (max-width: 767px) {
+
+#blog {
+  width: 85%;
+}
+
   .immaginearticolo {
     width: 90%;
     height: 100px;
@@ -628,7 +637,7 @@ nav {
     margin: 10px 7px 5px 7px;
   }
   .articolo {
-    width: 95%;
+    width: 100%;
   }
 
 }
