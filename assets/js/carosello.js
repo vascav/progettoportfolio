@@ -6,6 +6,6 @@ window.addEventListener('DOMContentLoaded', function() {
       words[currentWordIndex].classList.remove('active');
       currentWordIndex = (currentWordIndex + 1) % words.length;
       words[currentWordIndex].classList.add('active');
-    }, 1000);
+    }, 700);
   });
   
