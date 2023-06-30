@@ -603,14 +603,15 @@ nav {
 
 .readmore {
   margin-top: 10px;
-  border-radius: 5px;
+  border-radius: 8px;
   background-color: #f1f1f1;
   border: 1px solid #ccc;
   cursor: pointer;
   float: right;
   color: #333;
-  padding: 2px 5px;
+  padding: 3px 7px;
   transition: transform 0.1s ease;
+  font-size: 14px;
 }
 
 .readmore:hover {
