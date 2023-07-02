@@ -57,6 +57,7 @@ nav {
     align-items: center;
 }
 
+/*
 .cerchiato {
     white-space: nowrap;
     padding: 1px 8px;
@@ -69,9 +70,26 @@ nav {
     width: 78px;
     font-size: 15px;
 }
+*/
+
+.cerchiato {
+  letter-spacing: 1px;
+  white-space: nowrap;
+  padding: 1px 8px;
+  margin: 5px 6px;
+  align-items: center;
+  border: 2px solid;
+  border-image: linear-gradient(to left, greenyellow, #333) 1;
+  transition: transform 0.1s ease;
+  width: 78px;
+  font-size: 15px;
+}
 
 .cerchiato:hover {
     transform: scale(1.15);
+    background-image: linear-gradient(to left, greenyellow, #333);
+    color: white;
+    border: 2px solid;
 }
 
 .nome {
@@ -533,7 +551,7 @@ nav {
   height: 5px;
   margin-top: 4px;
   border-radius: 25px;
-  background: linear-gradient(to left, greenyellow, black);
+  background: linear-gradient(to left, greenyellow, #000);
 }
 
 .line:first-of-type {
