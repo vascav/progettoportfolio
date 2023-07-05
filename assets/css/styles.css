@@ -736,7 +736,9 @@ textarea {
   .articolo {
     width: 100%;
   }
-
+  html {
+    min-height: 100vh;
+  }
   .menu {
     position: relative;
     top: 10px;
@@ -744,10 +746,10 @@ textarea {
     background: linear-gradient(45deg, #ccc, #f1f1f1);
     border-radius: 100%;
     cursor: pointer;
-    box-shadow: 7px 7px 15px #ccc;
+    box-shadow: 5px 5px 15px #ccc;
     &::before, &::after {
       content: "";
-      background: #333;
+      background: #424141;
       border-radius: 5px;
       width: 30px;
       height: 5px;
@@ -775,20 +777,18 @@ textarea {
         opacity: 1;
         pointer-events: auto;
         &:first-of-type {
-          right: 70px;
+          right: 75px;
         }
         &:last-of-type {
-          right: -70px;
+          right: -82px;
           transition-delay: .1s;
         }
         &:nth-of-type(2) {
-          bottom: -65px;
-          right: 35px;
+          right: 150px;
           transition-delay: .05s;
         }
         &:nth-of-type(3) {
-          bottom: -65px;
-          right: -35px;
+          right: -160px;
           transition-delay: .05s;
         }
       }
@@ -802,7 +802,7 @@ textarea {
     padding: 0px;
     object-fit: scale-down;
   }
-
+  
   .imgpc {
     width: 29px;
     height: 26px;
@@ -836,7 +836,7 @@ textarea {
   }
   
   .pmenu {
-    font-size: 7px;
+    font-size: 10px;
     color: #333;
     margin: 2px;
     padding: 0px;
@@ -848,8 +848,8 @@ textarea {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 50px;
-    height: 50px;
+    width: 60px;
+    height: 60px;
     padding: 3px;
     border-radius: 50%;
     cursor: pointer;
