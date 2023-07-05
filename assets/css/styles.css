@@ -747,7 +747,8 @@ textarea {
     border-radius: 100%;
     cursor: pointer;
     box-shadow: 5px 5px 15px #ccc;
-    &::before, &::after {
+  }
+  .menu::before, .menu::after {
       content: "";
       background: #424141;
       border-radius: 5px;
@@ -759,42 +760,62 @@ textarea {
       transition: 0.2s ease;
       z-index: 1;
     }
-    &::before {
+  .menu::before {
       transform: rotate(0deg);
     }
-    &::after {
+  .menu::after {
       transform: rotate(-90deg);
     }
-    &.open {
+  .menu.open {
       opacity: .9;
-      &::before {
+  }
+  .menu::before {
         transform: rotate(45deg);
-      }
-      &::after {
+    }
+  .menu::after {
         transform: rotate(-45deg);
-      }
-      .button {
+    }
+  .button {
         opacity: 1;
         pointer-events: auto;
-        &:first-of-type {
+    }
+  .button:first-of-type {
           right: 75px;
-        }
-        &:last-of-type {
+    }
+  .button:last-of-type {
           right: -82px;
           transition-delay: .1s;
-        }
-        &:nth-of-type(2) {
+    }
+  .button:nth-of-type(2) {
           right: 150px;
           transition-delay: .05s;
-        }
-        &:nth-of-type(3) {
+    }
+  .button:nth-of-type(3) {
           right: -160px;
           transition-delay: .05s;
-        }
-      }
     }
+  .button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    padding: 3px;
+    border-radius: 50%;
+    cursor: pointer;
+    background: linear-gradient(45deg, #ccc, #f1f1f1);
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    opacity: 0;
+    pointer-events: none;
+    box-shadow: inherit;
+    transition: 0.2s cubic-bezier(0.18, 0.89, 0.32, 1.28), 0.2s ease opacity, 0.2s cubic-bezier(.08,.82,.17,1) transform;
   }
-  
+    .button:hover {
+      transform: scale(1.1);
+    }
   .imghome {
     width: 31px;
     height: 26px;
@@ -841,28 +862,5 @@ textarea {
     margin: 2px;
     padding: 0px;
     font-weight: bold;
-  }
-  
-  .button {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 60px;
-    height: 60px;
-    padding: 3px;
-    border-radius: 50%;
-    cursor: pointer;
-    background: linear-gradient(45deg, #ccc, #f1f1f1);
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    opacity: 0;
-    pointer-events: none;
-    box-shadow: inherit;
-    transition: 0.2s cubic-bezier(0.18, 0.89, 0.32, 1.28), 0.2s ease opacity, 0.2s cubic-bezier(.08,.82,.17,1) transform;
-    &:hover {
-      transform: scale(1.1);
-    }
   }
 }
