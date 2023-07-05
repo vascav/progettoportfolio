@@ -1,4 +1,8 @@
 
+html {
+  min-height: 100vh;
+}
+
 body {
     font-family: Arial, sans-serif;
     margin: 0 auto;
@@ -42,6 +46,10 @@ header {
     position: sticky;
     top: 0;
     z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .testa {
@@ -511,68 +519,138 @@ textarea {
 }
 
 
-/* Menu a comparsa */
+/* MENU */
 
-nav {
+.menu {
+  position: relative;
+  top: 10px;
+  padding: 30px;
+  background: linear-gradient(45deg, #ccc, #f1f1f1);
+  border-radius: 100%;
+  cursor: pointer;
+  box-shadow: 5px 5px 15px #ccc;
+  &::before, &::after {
+    content: "";
+    background: #424141;
+    border-radius: 5px;
+    width: 30px;
+    height: 5px;
+    position: absolute;
+    left: 16px;
+    top: 27px;
+    transition: 0.2s ease;
+    z-index: 1;
+  }
+  &::before {
+    transform: rotate(0deg);
+  }
+  &::after {
+    transform: rotate(-90deg);
+  }
+  &.open {
+    opacity: .9;
+    &::before {
+      transform: rotate(45deg);
+    }
+    &::after {
+      transform: rotate(-45deg);
+    }
+    .button {
+      opacity: 1;
+      pointer-events: auto;
+      &:first-of-type {
+        right: 75px;
+      }
+      &:last-of-type {
+        right: -82px;
+        transition-delay: .1s;
+      }
+      &:nth-of-type(2) {
+        right: 150px;
+        transition-delay: .05s;
+      }
+      &:nth-of-type(3) {
+        right: -160px;
+        transition-delay: .05s;
+      }
+    }
+  }
+}
+
+.imghome {
+  width: 31px;
+  height: 26px;
+  margin: 0px;
+  padding: 0px;
+  object-fit: scale-down;
+}
+
+.imgpc {
+  width: 29px;
+  height: 26px;
+  margin: 0px;
+  padding: 0px;
+  object-fit: scale-down;
+}
+
+.imgprofilo {
+  width: 24px;
+  height: 26px;
+  margin: 0px;
+  padding: 0px;
+  object-fit: scale-down;
+}
+
+.imgblog {
+  width: 24px;
+  height: 26px;
+  margin: 0px;
+  padding: 0px;
+  object-fit: scale-down;
+}
+
+.imgmail {
+  width: 24px;
+  height: 26px;
+  margin: 0px;
+  padding: 0px;
+  object-fit: scale-down;
+}
+
+.pmenu {
+  font-size: 10px;
+  color: #333;
+  margin: 2px;
+  padding: 0px;
+  font-weight: bold;
+}
+
+.button {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
-  padding: 0;
-}
-
-.navbar {
-  display: none;
-  list-style-type: none;
-  padding: 0px;
-  margin: 14px 0px 0px 0px;
-  text-align: center;
-  width: 80%;
-}
-  
-.navbar li {
-  display: inline-block;
-}
-
-.hamburger {
-  display: block;
-  align-items: center;
+  width: 60px;
+  height: 60px;
+  padding: 3px;
+  border-radius: 50%;
   cursor: pointer;
-  padding: 1px;
-  transition: transform 0.1s ease;
+  background: linear-gradient(45deg, #ccc, #f1f1f1);
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  opacity: 0;
+  pointer-events: none;
+  box-shadow: inherit;
+  transition: 0.2s cubic-bezier(0.18, 0.89, 0.32, 1.28), 0.2s ease opacity, 0.2s cubic-bezier(.08,.82,.17,1) transform;
+  &:hover {
+    transform: scale(1.1);
+  }
 }
 
-.hamburger:hover {
-  transform: scale(1.15);
-}
-  
-.line {
-  width: 30px;
-  height: 5px;
-  margin-top: 4px;
-  border-radius: 25px;
-  background: linear-gradient(to left, greenyellow, #000);
-}
-
-.line:first-of-type {
-  margin-top: 8px;
-}
-
-.specmenu {
-  width: 30px;
-  height: 7px;
-  margin-top: 4px;
-  font-size: 7px;
-  letter-spacing: 2px;
-  color: #333;
-}
-  
-.show {
-  display: block !important;
-}  
 
 
-/* Articoli blog */
+/* ARTICOLI BLOG */
 
 
 .articolo:first-of-type {
@@ -659,4 +737,133 @@ nav {
     width: 100%;
   }
 
+
+  .menu {
+    position: relative;
+    top: 10px;
+    padding: 30px;
+    background: linear-gradient(45deg, #ccc, #f1f1f1);
+    border-radius: 100%;
+    cursor: pointer;
+    box-shadow: 7px 7px 15px #ccc;
+    &::before, &::after {
+      content: "";
+      background: #333;
+      border-radius: 5px;
+      width: 30px;
+      height: 5px;
+      position: absolute;
+      left: 16px;
+      top: 27px;
+      transition: 0.2s ease;
+      z-index: 1;
+    }
+    &::before {
+      transform: rotate(0deg);
+    }
+    &::after {
+      transform: rotate(-90deg);
+    }
+    &.open {
+      opacity: .9;
+      &::before {
+        transform: rotate(45deg);
+      }
+      &::after {
+        transform: rotate(-45deg);
+      }
+      .button {
+        opacity: 1;
+        pointer-events: auto;
+        &:first-of-type {
+          right: 70px;
+        }
+        &:last-of-type {
+          right: -70px;
+          transition-delay: .1s;
+        }
+        &:nth-of-type(2) {
+          bottom: -65px;
+          right: 35px;
+          transition-delay: .05s;
+        }
+        &:nth-of-type(3) {
+          bottom: -65px;
+          right: -35px;
+          transition-delay: .05s;
+        }
+      }
+  }
+  
+  .imghome {
+    width: 31px;
+    height: 26px;
+    margin: 0px;
+    padding: 0px;
+    object-fit: scale-down;
+  }
+
+  .imgpc {
+    width: 29px;
+    height: 26px;
+    margin: 0px;
+    padding: 0px;
+    object-fit: scale-down;
+  }
+  
+  .imgprofilo {
+    width: 24px;
+    height: 26px;
+    margin: 0px;
+    padding: 0px;
+    object-fit: scale-down;
+  }
+  
+  .imgblog {
+    width: 24px;
+    height: 26px;
+    margin: 0px;
+    padding: 0px;
+    object-fit: scale-down;
+  }
+  
+  .imgmail {
+    width: 24px;
+    height: 26px;
+    margin: 0px;
+    padding: 0px;
+    object-fit: scale-down;
+  }
+  
+  .pmenu {
+    font-size: 7px;
+    color: #333;
+    margin: 2px;
+    padding: 0px;
+    font-weight: bold;
+  }
+  
+  .button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    padding: 3px;
+    border-radius: 50%;
+    cursor: pointer;
+    background: linear-gradient(45deg, #ccc, #f1f1f1);
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    opacity: 0;
+    pointer-events: none;
+    box-shadow: inherit;
+    transition: 0.2s cubic-bezier(0.18, 0.89, 0.32, 1.28), 0.2s ease opacity, 0.2s cubic-bezier(.08,.82,.17,1) transform;
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+}
 }
