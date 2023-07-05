@@ -737,7 +737,6 @@ textarea {
     width: 100%;
   }
 
-
   .menu {
     position: relative;
     top: 10px;
@@ -793,6 +792,7 @@ textarea {
           transition-delay: .05s;
         }
       }
+    }
   }
   
   .imghome {
@@ -865,5 +865,4 @@ textarea {
       transform: scale(1.1);
     }
   }
-}
 }
