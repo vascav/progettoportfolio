@@ -740,6 +740,7 @@ textarea {
   html {
     min-height: 100vh;
   }
+  
   .menu {
     position: relative;
     top: 10px;
@@ -748,8 +749,7 @@ textarea {
     border-radius: 100%;
     cursor: pointer;
     box-shadow: 5px 5px 15px #ccc;
-  }
-  .menu::before, .menu::after {
+    &::before, &::after {
       content: "";
       background: #424141;
       border-radius: 5px;
@@ -761,108 +761,44 @@ textarea {
       transition: 0.2s ease;
       z-index: 1;
     }
-  .menu::before {
+    &::before {
       transform: rotate(0deg);
     }
-  .menu::after {
+    &::after {
       transform: rotate(-90deg);
     }
-  .menu.open {
+    &.open {
       opacity: .9;
-  }
-  .menu::before {
+      &::before {
         transform: rotate(45deg);
-    }
-  .menu::after {
+      }
+      &::after {
         transform: rotate(-45deg);
-    }
-  .button {
+      }
+      .button {
         opacity: 1;
         pointer-events: auto;
-    }
-  .button:first-of-type {
-          right: 75px;
-    }
-  .button:last-of-type {
-          right: -82px;
+        &:first-of-type {
+          right: -3px;
+          bottom: -80px;
+        }
+        &:last-of-type {
+          right: -3px;
+          bottom: -160px;
           transition-delay: .1s;
-    }
-  .button:nth-of-type(2) {
-          right: 150px;
+        }
+        &:nth-of-type(2) {
+          right: -3px;
+          bottom: -240px;
           transition-delay: .05s;
-    }
-  .button:nth-of-type(3) {
-          right: -160px;
+        }
+        &:nth-of-type(3) {
+          right: -3px;
+          bottom: -320px;
           transition-delay: .05s;
+        }
+      }
     }
-  .button {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 60px;
-    height: 60px;
-    padding: 3px;
-    border-radius: 50%;
-    cursor: pointer;
-    background: linear-gradient(45deg, #ccc, #f1f1f1);
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    opacity: 0;
-    pointer-events: none;
-    box-shadow: inherit;
-    transition: 0.2s cubic-bezier(0.18, 0.89, 0.32, 1.28), 0.2s ease opacity, 0.2s cubic-bezier(.08,.82,.17,1) transform;
   }
-    .button:hover {
-      transform: scale(1.1);
-    }
-  .imghome {
-    width: 31px;
-    height: 26px;
-    margin: 0px;
-    padding: 0px;
-    object-fit: scale-down;
-  }
-  
-  .imgpc {
-    width: 29px;
-    height: 26px;
-    margin: 0px;
-    padding: 0px;
-    object-fit: scale-down;
-  }
-  
-  .imgprofilo {
-    width: 24px;
-    height: 26px;
-    margin: 0px;
-    padding: 0px;
-    object-fit: scale-down;
-  }
-  
-  .imgblog {
-    width: 24px;
-    height: 26px;
-    margin: 0px;
-    padding: 0px;
-    object-fit: scale-down;
-  }
-  
-  .imgmail {
-    width: 24px;
-    height: 26px;
-    margin: 0px;
-    padding: 0px;
-    object-fit: scale-down;
-  }
-  
-  .pmenu {
-    font-size: 10px;
-    color: #333;
-    margin: 2px;
-    padding: 0px;
-    font-weight: bold;
-  }
-  
+
 }
