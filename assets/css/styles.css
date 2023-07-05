@@ -736,6 +736,8 @@ textarea {
   .articolo {
     width: 100%;
   }
+
+  /*
   html {
     min-height: 100vh;
   }
@@ -863,4 +865,5 @@ textarea {
     padding: 0px;
     font-weight: bold;
   }
+  */
 }
