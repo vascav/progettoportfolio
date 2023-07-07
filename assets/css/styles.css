@@ -202,6 +202,19 @@ hr {
 }
 
 .immaginecontainer {
+  overflow: hidden;
+  position: relative;
+  display: inline-block;
+  width: 440px;
+  height: 220px;
+  margin-bottom: 40px;
+  box-shadow: 8px 8px 8px 8px #ccc;
+  border-radius: 15px;
+  background: red;
+}
+
+/*
+.immaginecontainer {
   position: relative;
   display: inline-block;
   width: 39%;
@@ -209,9 +222,11 @@ hr {
   min-width: 210px;
   min-height: 70px;
   margin-bottom: 40px;
-  box-shadow: 8px 8px 8px #ccc;
-  border-radius: 25px;
+  box-shadow: 8px 8px 8px 8px #ccc;
+  border-radius: 15px;
+  background: red;
 }
+*/
 
 .velo-contenuto {
   position: absolute;
@@ -228,7 +243,7 @@ hr {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
-  border-radius: 25px;
+  border-radius: 15px;
 }
 
 .velo:hover {
@@ -244,9 +259,9 @@ hr {
 
 .imgprogetto {
   object-fit: cover;
-  border-radius: 25px;
-  width: 100%;
-  height: 100%;
+  border-radius: 15px;
+  width: 444px;
+  height: 222px;;
 }
 
 .nomeprogetto {
@@ -257,16 +272,6 @@ hr {
 .descrizione {
   letter-spacing: 2px;
   line-height: 22px
-}
-
-.fase {
-  letter-spacing: 2px;
-  line-height: 22px;
-}
-
-.skill {
-  letter-spacing: 1px;
-  margin-top: 15px;
 }
 
 
@@ -319,6 +324,11 @@ hr {
     margin-bottom: 0;
   }
 
+  .fase {
+    letter-spacing: 2px;
+    line-height: 22px;
+  }
+
 
 
 /* PROGRESSBAR */
@@ -330,6 +340,11 @@ hr {
     border-radius: 10px;
     overflow: hidden;
     margin: 5px auto;
+  }
+
+  .skill {
+    letter-spacing: 1px;
+    margin-top: 15px;
   }
   
   .css {
