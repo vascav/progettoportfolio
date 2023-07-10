@@ -623,7 +623,7 @@ textarea {
   cursor: pointer;
   background-image: linear-gradient(45deg, rgba(204, 204, 204, 1), rgba(241, 241, 241,1));
   box-shadow: 1px 1px 5px 1px #ccc;
-  margin: 20px 0px;
+  margin: 15px 30px;
 }
 
 .cerchio:hover {
@@ -631,7 +631,8 @@ textarea {
 }
     
 .show {
-  display: block !important;
+  display: flex !important;
+  flex-direction: row;
 }  
 
 
@@ -693,6 +694,11 @@ textarea {
   #blog {
     width: 85%;
   }
+
+  .show {
+    display: flex !important;
+    flex-direction: column;
+  }  
   
     .immaginearticolo {
       width: 90%;
