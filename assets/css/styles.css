@@ -609,6 +609,8 @@ textarea {
 
 .apertura:hover {
   background: linear-gradient(45deg, #aaa, #f1f1f1);
+  transition: 1s ease;
+  transform: rotate(360deg);
 }
 
 .cerchio {
