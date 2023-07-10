@@ -779,5 +779,27 @@ textarea {
   resize: none;
   box-shadow: 3px 3px 8px #ccc;
 }
-  }
+
+
+@media (max-width: 768px) {
+.animated {
+  animation: none;
+}
+.zoomIn {
+  animation: none;
+}
+.fadeInDown {
+  animation: none;
+}
+.flipInX {
+  animation: none;
+}
+.flipInY {
+  animation: none;
+}
+.fadeInLeft {
+  animation: none;
+}
+}
+}
 
