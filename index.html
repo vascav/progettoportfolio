@@ -3,6 +3,8 @@
 <html lang="it">
 
     <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+
         <meta charset="UTF-8"/>
         <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -17,6 +19,7 @@
         <meta property="og:site_name" content="Saverio Cavalcante">
 
         <link rel="stylesheet" href="assets/css/styles.css">
+        
         <link rel="icon" type="image/x-icon" href="assets/images/sctransp.png"/>
         <title>Saverio Cavalcante | Portfolio</title>
 
@@ -26,7 +29,7 @@
         
         <header>
 
-        <div class="testa">
+        <div class="testa animated zoomIn">
             <h1 class="nome">SAVERIO CAVALCANTE</h1>
             <div class="box">
                 <div id="carousel">
@@ -40,38 +43,41 @@
                 </div>
             </div>
         </div>
+
         
-        <div class="menu">
+        <div class="menu  animated zoomIn">
+            <div class="apertura"></div>
 
-            <div class="button">
-                <a href="assets/pages/progetti.html">
-                <img class="imgpc" src="assets/images/pc.png"/>
-                <p class="pmenu">PROGETTI</p>
-                </a>
+            <div class="navbar animated fadeInDown">
+    
+                <div class="cerchio">
+                    <a href="assets/pages/progetti.html">
+                    <img class="imgpc" src="assets/images/pc.png"/>
+                    <p class="pmenu">PROGETTI</p>
+                    </a>
+                </div>
+    
+                <div class="cerchio">
+                    <a href="assets/pages/chisono.html">
+                    <img class="imgprofilo" src="assets/images/profilo.png"/>
+                    <p class="pmenu">CHI SONO</p>
+                </div>
+    
+                <div class="cerchio">
+                    <a href="assets/pages/contattami.html">
+                    <img class="imgmail" src="assets/images/email.png"/>
+                    <p class="pmenu">CONTATTI</p>
+                    </a>
+                </div>
+    
+                <div class="cerchio">
+                    <a href="assets/pages/blog.html">
+                    <img class="imgblog" src="assets/images/blog.png"/>
+                    <p class="pmenu">BLOG</p>
+                    </a>
+                </div>
+                
             </div>
-            
-            <div class="button">
-                <a href="assets/pages/chisono.html">
-                <img class="imgprofilo" src="assets/images/profilo.png"/>
-                <p class="pmenu">CHI SONO</p>
-                </a>
-            </div>
-
-            
-            <div class="button">
-                <a href="assets/pages/contattami.html">
-                <img class="imgmail" src="assets/images/email.png"/>
-                <p class="pmenu">CONTATTI</p>
-                </a>
-            </div>
-
-            <div class="button">
-                <a href="assets/pages/blog.html">
-                <img class="imgblog" src="assets/images/blog.png"/>
-                <p class="pmenu">BLOG</p>
-                </a>
-            </div>
-            
         </div>
 
         </header>
@@ -84,7 +90,7 @@
         </main>
 
         <footer>
-            <div class="socialhome">
+            <div class="socialhome animated zoomIn">
                 <a href="https://co.linkedin.com/in/saveriocavalcante" rel="noopener" target="_blank">
                     <img class="loghi" src="assets/images/linkedin.png" alt="logo linkedin"/>
                 </a>
@@ -102,7 +108,8 @@
         <script src="assets/js/particles.js"></script>
         <script src="assets/js/app.js"></script>
         <script src="assets/js/carosello.js"></script>
-        <script src="menu.js"></script>
+
+        <script src="assets/js/menu.js"></script>
 
     </body>
 

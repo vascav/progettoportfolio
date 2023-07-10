@@ -3,6 +3,8 @@
 <html lang="it">
 
     <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+
         <meta charset="UTF-8"/>
         <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -24,7 +26,7 @@
     <body>
 
         <header>
-            <div class="testa">
+            <div class="testa animated zoomIn">
                 <h1 class="nome">SAVERIO CAVALCANTE</h1>
                 <div class="box">
                     <div id="carousel">
@@ -38,36 +40,40 @@
                     </div>
             </div>
           </div>
-          <div class="menu" onclick="this.classList.toggle('open')">
+          <div class="menu animated zoomIn">
+            <div class="apertura"></div>
 
-            <div class="button">
-                <a href="progetti.html">
-                <img class="imgpc" src="../images/pc.png"/>
-                <p class="pmenu">PROGETTI</p>
-                </a>
-            </div>
-            
-            <div class="button">
-                <a href="chisono.html">
-                <img class="imgprofilo" src="../images/profilo.png"/>
-                <p class="pmenu">CHI SONO</p>
-                </a>
-            </div>
+            <div class="navbar  animated fadeInDown">
+    
+                <div class="cerchio">
+                    <a href="../../index.html">
+                    <img class="imgblog" src="../images/home.png"/>
+                    <p class="pmenu">HOME</p>
+                    </a>
+                </div>
 
-            
-            <div class="button">
-                <a href="../../index.html">
-                <img class="imghome" src="../images/home.png"/>
-                <p class="pmenu">HOME</p>
-                </a>
+                <div class="cerchio">
+                    <a href="progetti.html">
+                    <img class="imgpc" src="../images/pc.png"/>
+                    <p class="pmenu">PROGETTI</p>
+                    </a>
+                </div>
+    
+                <div class="cerchio">
+                    <a href="chisono.html">
+                    <img class="imgprofilo" src="../images/profilo.png"/>
+                    <p class="pmenu">CHI SONO</p>
+                </div>
+    
+                <div class="cerchio">
+                    <a href="blog.html">
+                    <img class="imgblog" src="../images/blog.png"/>
+                    <p class="pmenu">BLOG</p>
+                    </a>
+                </div>
+                
             </div>
-
-            <div class="button">
-                <a href="blog.html">
-                <img class="imgblog" src="../images/blog.png"/>
-                <p class="pmenu">BLOG</p>
-                </a>
-            </div>
+        </div>
 
         </header>
 
@@ -76,7 +82,7 @@
             <section id="contattami">
                 <h3>CONTATTAMI</h3>
 
-                <form id="my-form" action="https://formspree.io/f/meqwyzlv" method="POST">
+                <form id="my-form" action="https://formspree.io/f/meqwyzlv" method="POST" class="animated flipInX">
 
                     <fieldset>
                         <label>Nome<br>
@@ -109,7 +115,7 @@
         
 
         <footer>
-            <div class="social">
+            <div class="social animated zoomIn">
                 <a href="https://it.linkedin.com/" rel="noopener" target="_blank"><img class="loghi" src="../images/linkedin.png" alt="logo linkedin"/></a>
                 <a href="mailto:saveriocavalcante@gmail.com" rel="noopener" target="_blank"><img class="loghi" src="../images/mail.png" alt="logo linkedin"/></a>
                 <a href="https://github.com/vascav" rel="noopener" target="_blank"><img class="loghi" src="../images/github.png" alt="logo linkedin"/></a>
@@ -119,6 +125,7 @@
         
         <script src="../js/carosello.js"></script>
         <script src="../js/form.js"></script>
+        <script src="../js/menu.js"></script>
 
     </body>
 

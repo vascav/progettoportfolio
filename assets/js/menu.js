@@ -1,7 +1,7 @@
-const hamburger = document.querySelector('.hamburger');
+const apertura = document.querySelector('.apertura');
 const navbar = document.querySelector('.navbar');
 
-hamburger.addEventListener('click', () => {
+apertura.addEventListener('click', () => {
   navbar.classList.toggle('show');
 });
 

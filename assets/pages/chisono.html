@@ -3,6 +3,8 @@
 <html lang="it">
 
     <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+
         <meta charset="UTF-8"/>
         <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -24,7 +26,7 @@
     <body>
 
         <header>
-            <div class="testa">
+            <div class="testa animated zoomIn">
                 <h1 class="nome">SAVERIO CAVALCANTE</h1>
                 <div class="box">
                     <div id="carousel">
@@ -39,37 +41,40 @@
             </div>
           </div>
 
-          <div class="menu" onclick="this.classList.toggle('open')">
+          <div class="menu animated zoomIn">
+            <div class="apertura"></div>
 
-            <div class="button">
-                <a href="progetti.html">
-                <img class="imgpc" src="../images/pc.png"/>
-                <p class="pmenu">PROGETTI</p>
-                </a>
-            </div>
-            
-            <div class="button">
-                <a href="../../index.html">
-                <img class="imghome" src="../images/home.png"/>
-                <p class="pmenu">HOME</p>
-                </a>
-            </div>
+            <div class="navbar  animated fadeInDown">
 
-            
-            <div class="button">
-                <a href="contattami.html">
-                <img class="imgmail" src="../images/email.png"/>
-                <p class="pmenu">CONTATTI</p>
-                </a>
+                <div class="cerchio">
+                    <a href="../../index.html">
+                    <img class="imgblog" src="../images/home.png"/>
+                    <p class="pmenu">HOME</p>
+                    </a>
+                </div>
+    
+                <div class="cerchio">
+                    <a href="progetti.html">
+                    <img class="imgpc" src="../images/pc.png"/>
+                    <p class="pmenu">PROGETTI</p>
+                    </a>
+                </div>
+    
+                <div class="cerchio">
+                    <a href="contattami.html">
+                    <img class="imgmail" src="../images/email.png"/>
+                    <p class="pmenu">CONTATTI</p>
+                    </a>
+                </div>
+    
+                <div class="cerchio">
+                    <a href="blog.html">
+                    <img class="imgblog" src="../images/blog.png"/>
+                    <p class="pmenu">BLOG</p>
+                    </a>
+                </div>
+                
             </div>
-
-            <div class="button">
-                <a href="blog.html">
-                <img class="imgblog" src="../images/blog.png"/>
-                <p class="pmenu">BLOG</p>
-                </a>
-            </div>
-            
         </div>
 
         </header>
@@ -79,7 +84,7 @@
                 <section>
                     <h3>CHI SONO</h3>
 
-                    <p class="descrizione">
+                    <p class="descrizione animated flipInY">
                         Ciao a tutti, mi chiamo <strong>Saverio</strong>, <br>
                         sono un <strong>web developer</strong> appassionato di tecnologia. <br>
                         Amo creare esperienze digitali coinvolgenti e intuitive. <br>
@@ -92,7 +97,7 @@
 
                     <h3 class="roadmap">ROADMAP</h3>
 
-                    <div class="timeline">
+                    <div class="timeline animated fadeInLeft">
                         <div class="timeline-item">
                             <div class="timeline-date">1997</div>
                             <div class="timeline-content">
@@ -194,7 +199,7 @@
         
 
         <footer>
-            <div class="social">
+            <div class="social animated zoomIn">
                 <a href="https://co.linkedin.com/in/saveriocavalcante" rel="noopener" target="_blank"target="_blank"><img class="loghi" src="../images/linkedin.png" alt="logo linkedin"/></a>
                 <a href="mailto:saveriocavalcante@gmail.com" rel="noopener" target="_blank"><img class="loghi" src="../images/mail.png" alt="logo linkedin"/></a>
                 <a href="https://github.com/vascav" rel="noopener" target="_blank"><img class="loghi" src="../images/github.png" alt="logo linkedin"/></a>
@@ -203,6 +208,7 @@
 
         
         <script src="../js/carosello.js"></script>
+        <script src="../js/menu.js"></script>
 
     </body>
 
