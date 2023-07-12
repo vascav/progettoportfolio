@@ -118,7 +118,6 @@ footer {
 
 .loghi:hover {
   transform: scale(1.2);
-  filter: drop-shadow(1px 1px 8px #adff2f);
 }
 
 
@@ -191,9 +190,8 @@ hr {
   width: 440px;
   height: 220px;
   margin-bottom: 70px;
-  /*
-  box-shadow: 8px 8px 8px 8px #ccc;
-  */
+  border: 1px solid #adff2f;
+  box-shadow: 0px 0px 15px 1px #adff2f;
   border-radius: 15px;
 }
 
@@ -229,14 +227,16 @@ hr {
 }
 
 .velo p {
-  color: #f1f1f1;
   font-weight: bold;
   text-align: center;
 }
 
 .nomeprogetto {
+  background: linear-gradient(to right, #008000, #4caf50, #adff2f, #b5ff45);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   letter-spacing: 2px;
-  font-size: 20px;
+  font-size: 25px;
 }
 
 .descrizione {
@@ -284,6 +284,8 @@ hr {
   padding: 10px 20px;
   width: 47%;
   text-align: center;
+  border: 1px solid #adff2f;
+  box-shadow: 0px 0px 15px 1px #adff2f;
 }
 
 table {
@@ -294,7 +296,7 @@ table {
 }
 
 .rigavuota {
-  height: 10px;
+  height: 15px;
 }
 
 /* 
@@ -526,9 +528,7 @@ input[type="submit"] {
   min-width: 150px;
   border-radius: 10px;
   transition: transform 0.1s ease;
-  background: linear-gradient(to right, #008000, #4caf50, #adff2f, #b5ff45);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+  color: #b5ff45;
 }
 
 input[type="submit"]:hover {
@@ -555,12 +555,14 @@ textarea {
   nav {
     margin: 0px auto 20px auto;
     position: relative;
-    width: 590px;
+    width: 595px;
     height: 50px;
     background-color: rgba(51, 51, 51, 0.7);
     border-radius: 15px;
     font-size: 0;
     overflow: hidden;
+    border: 1px solid #adff2f;
+   box-shadow: 0px 0px 15px 1px #adff2f;
   }
 
   nav a {
@@ -605,7 +607,7 @@ textarea {
   nav .start-home, a:nth-child(1):hover~.animation {
     width: 118px;
     left: 0;
-    background: linear-gradient(to right, #008000, #4caf50, #adff2f);
+    background: linear-gradient(to left, #008000, #4caf50, #adff2f);
     /* background-color: #1abc9c; */
   }
 
