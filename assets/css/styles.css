@@ -443,7 +443,16 @@ hr {
       width: 0%;
     }
     100% {
-      width: 50%;
+      width: 65%;
+    }
+  }
+
+  @keyframes librerie_python {
+    0% {
+      width: 0%;
+    }
+    100% {
+      width: 55%;
     }
   }
 
